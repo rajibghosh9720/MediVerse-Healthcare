@@ -1,0 +1,110 @@
+.main {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 60px);
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 260px;
+  background-color: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+.main--content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: calc(100% - 300px);
+  overflow-y: scroll;
+  transition: 0.3s;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.section--title {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.cards {
+  padding: 0px 20px 0px 0px;
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 20px;
+  min-width: 230px;
+  height: 10rem;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card--data {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.card h1 {
+  font-weight: 600;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.card--icon--lg {
+  font-size: 80px;
+}
+
+.card-1 {
+  background-color: rgba(80, 115, 251, 0.1);
+}
+
+.card-1 .card--title {
+  color: rgba(80, 115, 251, 1);
+  font-weight: 700;
+}
+
+.card-1 .card--icon--lg {
+  color: rgba(80, 115, 251, 0.4);
+}
+
+.card-2 {
+  background-color: rgba(241, 210, 67, 0.1);
+}
+
+.card-2 .card--title {
+  color: rgba(241, 210, 67, 1);
+  font-weight: 700;
+}
+
+.card-2 .card--icon--lg {
+  color: rgba(241, 210, 67, 0.4);
+}
+
+
+/* HospitalView.css */
+
+.selected {
+  background-color: #6366f1; /* Change background color to indicate selection */
+  color: white; /* Change text color to indicate selection */
+}
